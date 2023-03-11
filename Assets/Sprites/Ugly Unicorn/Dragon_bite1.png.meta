@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: d3eb3169a405ad64389650b652b083a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7753786482353258759
+    second: Dragon_bite1_0
+  - first:
+      213: -7730175941699290166
+    second: Dragon_bite1_1
+  - first:
+      213: -770058827312092213
+    second: Dragon_bite1_2
+  - first:
+      213: -8761661104763369104
+    second: Dragon_bite1_3
+  - first:
+      213: -2240418128825827584
+    second: Dragon_bite1_4
+  - first:
+      213: 4369903180749687729
+    second: Dragon_bite1_5
+  - first:
+      213: -7342578859345773244
+    second: Dragon_bite1_6
+  - first:
+      213: -4198475162016601152
+    second: Dragon_bite1_7
+  - first:
+      213: 853994781682298079
+    second: Dragon_bite1_8
+  - first:
+      213: -1844734889660668316
+    second: Dragon_bite1_9
+  - first:
+      213: 1261596970860791224
+    second: Dragon_bite1_10
+  - first:
+      213: -1607458001376991973
+    second: Dragon_bite1_11
+  - first:
+      213: -1674688640356000675
+    second: Dragon_bite1_12
+  - first:
+      213: 6351576084540861141
+    second: Dragon_bite1_13
+  - first:
+      213: 6542995999688713526
+    second: Dragon_bite1_14
+  - first:
+      213: -8103353880503627640
+    second: Dragon_bite1_15
+  - first:
+      213: -8494251629094932275
+    second: Dragon_bite1_16
+  - first:
+      213: -4719392781178929647
+    second: Dragon_bite1_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dragon_bite1_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 6072
+        width: 1479
+        height: 820
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70144e079bbfa9b60800000000000000
+      internalID: 7753786482353258759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_1
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 6024
+        width: 1483
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb3ebfefe5e8b490800000000000000
+      internalID: -7730175941699290166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_2
+      rect:
+        serializedVersion: 2
+        x: 3349
+        y: 5987
+        width: 1480
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcba8e593933055f0800000000000000
+      internalID: -770058827312092213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 4938
+        width: 1487
+        height: 759
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079093085a3586680800000000000000
+      internalID: -8761661104763369104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_4
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 4938
+        width: 1487
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fbdf2059f68e0e0800000000000000
+      internalID: -2240418128825827584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_5
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 4938
+        width: 1490
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb4f674ac305ac30800000000000000
+      internalID: 4369903180749687729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3678
+        width: 1490
+        height: 763
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44df6691e6be91a90800000000000000
+      internalID: -7342578859345773244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_7
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 3678
+        width: 1499
+        height: 764
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb23b9a5150cb5c0800000000000000
+      internalID: -4198475162016601152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_8
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 3640
+        width: 1487
+        height: 801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdce532babff9db00800000000000000
+      internalID: 853994781682298079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_9
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2465
+        width: 1484
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466a105446f2666e0800000000000000
+      internalID: -1844734889660668316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_10
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 2472
+        width: 1482
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5cdd1c2c7128110800000000000000
+      internalID: 1261596970860791224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_11
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 2472
+        width: 1476
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15a094e67921b9e0800000000000000
+      internalID: -1607458001376991973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1358
+        width: 1473
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cd232fd8f42c8e0800000000000000
+      internalID: -1674688640356000675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_13
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 1357
+        width: 1473
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daaceafbc4552850800000000000000
+      internalID: 6351576084540861141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_14
+      rect:
+        serializedVersion: 2
+        x: 3342
+        y: 1358
+        width: 1473
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6356f3802346dca50800000000000000
+      internalID: 6542995999688713526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 197
+        width: 1473
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8805c4f349a1b8f80800000000000000
+      internalID: -8103353880503627640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_16
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 191
+        width: 1473
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc07307d52b5e1a80800000000000000
+      internalID: -8494251629094932275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon_bite1_17
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 197
+        width: 1473
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e794a1549518eb0800000000000000
+      internalID: -4719392781178929647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

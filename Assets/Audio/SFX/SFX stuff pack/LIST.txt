@@ -1,0 +1,44 @@
+Blast - An airy blast with a long tail.
+BoneSplosion - Shory bony splosion.
+Denied - Something you can't do.
+Denied2- Still can't.
+DraggingMetallicObject - Some kind of metallic object dragging on stone. Loops.
+ElectricScreamBoom - Long windup into a boom.
+ElectricSpark - Electric blast with a long tail.
+EnergyWeapon - Short kind of shooty sound.
+EnergyWeapon2 - More bassy variation.
+FieryBeam - Beam and fire sounds layered on top of each other. Loops.
+Flame - Flame loop.
+FlameIdle - Mellow flame loop.
+FlappyNoise1 & 2 - Like throwing a cloak about, lots of reverb.
+GemDink - Dink!
+GhastlyNoise - Airy sound.
+GhostAaah - Ghastly 'aaah' sound with background noise, long tail.
+GhostOhh - These sound like diablo 2 sounds lol.
+GhostOo - Airy Ghastly blast with a choir.
+HealingDrink - Gulp and a nice synth.
+HealingDrink2 - Gulp and a longer synth.
+HeavyHit - A heavy hit
+HolyAa - short synth choir
+LampFlickerLoop - A lamp at the end of it's lifecycle, flickering. Loops.
+Laser1 - Laser with a venting sound.
+Laser2 - Short
+Laser3 - Long with a venting sound at the end.
+LightningStrike - Yep.
+Menacing - A menacing long synth sound.
+MenuSoundish(1) - A thing
+MenuSoundish(2) - more
+MetalDing - Ding!
+MoreGhosts - Ghastly sound!
+Motor - A shitty motor, loops.
+NiceSound - :)
+PickUp - Short high pitched.
+ReverbyKohh - Yep. Long tail.
+Revert - Sounds like reverting from something. Short.
+SetSomething1 & 2 - Bit like setting something on the ground or hitting a switch.
+Shuffle1 & 2 - Light feet shuffle, jumping to the side?
+SpookyNoise - Very spooky noise, loops.
+StreetAmbience1-5 - Ambience.
+Swish - Swosh!
+Synth - A bit menacing high pitched synth, loops.
+Weird - Imagination ran out, short airy sound.

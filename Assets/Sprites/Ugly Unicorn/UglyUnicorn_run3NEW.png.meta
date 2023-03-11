@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: e0e528a1521efb7419657b00986e794f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3258667154116432570
+    second: UglyUnicorn_run3NEW_0
+  - first:
+      213: 2027265707675366692
+    second: UglyUnicorn_run3NEW_1
+  - first:
+      213: -5361035981595987789
+    second: UglyUnicorn_run3NEW_2
+  - first:
+      213: -11991214270753022
+    second: UglyUnicorn_run3NEW_3
+  - first:
+      213: -7480691043030537616
+    second: UglyUnicorn_run3NEW_4
+  - first:
+      213: 5885692877195281597
+    second: UglyUnicorn_run3NEW_5
+  - first:
+      213: 5089981729662305307
+    second: UglyUnicorn_run3NEW_6
+  - first:
+      213: 767205884867449273
+    second: UglyUnicorn_run3NEW_7
+  - first:
+      213: -3409752031026688069
+    second: UglyUnicorn_run3NEW_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2518
+        width: 1186
+        height: 904
+      alignment: 9
+      pivot: {x: 0.34154823, y: 0.46037793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2d752f28c193d20800000000000000
+      internalID: 3258667154116432570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_1
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 2469
+        width: 1196
+        height: 978
+      alignment: 9
+      pivot: {x: 0.34490457, y: 0.5165239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42532539b6b422c10800000000000000
+      internalID: 2027265707675366692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_2
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 2451
+        width: 1189
+        height: 971
+      alignment: 9
+      pivot: {x: 0.3481355, y: 0.5415514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b032e0cd26c995b0800000000000000
+      internalID: -5361035981595987789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_3
+      rect:
+        serializedVersion: 2
+        x: 3734
+        y: 2518
+        width: 1180
+        height: 904
+      alignment: 9
+      pivot: {x: 0.34831998, y: 0.51396596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20757fcdd0665dff0800000000000000
+      internalID: -11991214270753022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1324
+        width: 1169
+        height: 940
+      alignment: 9
+      pivot: {x: 0.34818482, y: 0.5346132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ae7b9712f3f2890800000000000000
+      internalID: -7480691043030537616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_5
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1314
+        width: 1177
+        height: 950
+      alignment: 9
+      pivot: {x: 0.3456348, y: 0.52977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db48542fc7e2ea150800000000000000
+      internalID: 5885692877195281597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_6
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1305
+        width: 1182
+        height: 952
+      alignment: 9
+      pivot: {x: 0.33951202, y: 0.5172295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1400cd4a6f33a640800000000000000
+      internalID: 5089981729662305307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_7
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1322
+        width: 1258
+        height: 932
+      alignment: 9
+      pivot: {x: 0.3165487, y: 0.4917461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b11d1dffa9a5aa00800000000000000
+      internalID: 767205884867449273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UglyUnicorn_run3NEW_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 285
+        width: 1180
+        height: 922
+      alignment: 9
+      pivot: {x: 0.3414066, y: 0.47617278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfcc7ae7902ea0d0800000000000000
+      internalID: -3409752031026688069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
