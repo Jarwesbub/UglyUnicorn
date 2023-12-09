@@ -20,6 +20,7 @@
 [Aa]ssets/Plugins/Editor/JetBrains*
 
 # Manually added:
+/WebGL/
 /zAAB_files/
 /zKeystores/
 
