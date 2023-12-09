@@ -20,8 +20,8 @@
 [Aa]ssets/Plugins/Editor/JetBrains*
 
 # Manually added:
-/zAAB_files
-/zKeystores
+/zAAB_files/
+/zKeystores/
 
 # Visual Studio cache directory
 .vs/
