@@ -13,7 +13,6 @@ public class AudioControlScript : MonoBehaviour
     private int ChooseMusic;
     private int Music, Volume;
 
-    // Start is called before the first frame update
     void Awake()
     {
         Volume = PlayerPrefs.GetInt("volume"); ///
@@ -58,10 +57,7 @@ public class AudioControlScript : MonoBehaviour
             BgMusic3.SetActive(false);
 
             source = null;
-            /*
-            source = GetComponent<AudioSource>();
-            source.Play();
-            */
+
         }
         if (ChooseMusic == 1)
         {

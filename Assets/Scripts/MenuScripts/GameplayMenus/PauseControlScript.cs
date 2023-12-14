@@ -15,39 +15,15 @@ public class PauseControlScript : MonoBehaviour
     public Button Music_Btn;
     public Button Vol_Btn;
 
-
-    private int Volume;
-    private int Music;
+    private int volume;
+    private int music;
 
     void Awake()
     {
-        /*
-        if (PlayerPrefs.HasKey("volume"))
-        {
-            Volume = PlayerPrefs.GetInt("volume");
+        volume = PlayerPrefs.GetInt("volume");
+        music = PlayerPrefs.GetInt("music");
 
-        }
-        else
-        {
-            PlayerPrefs.SetInt("volume", 1);
-        }
-        
-
-        if (PlayerPrefs.HasKey("music"))
-        {
-            Music = PlayerPrefs.GetInt("music");
-
-        }
-        else
-        {
-            PlayerPrefs.SetInt("music", 1);
-        }
-        */
-
-        Volume = PlayerPrefs.GetInt("volume");
-        Music = PlayerPrefs.GetInt("music");
-
-        if (Volume == 1)
+        if (volume == 1)
         {
             Vol_Btn.GetComponent<Image>().sprite = Vol_ON;
         }
@@ -56,7 +32,7 @@ public class PauseControlScript : MonoBehaviour
             Vol_Btn.GetComponent<Image>().sprite = Vol_OFF;
         }
 
-        if (Music == 1)
+        if (music == 1)
         {
             Music_Btn.GetComponent<Image>().sprite = Music_ON;
         }
@@ -64,80 +40,72 @@ public class PauseControlScript : MonoBehaviour
         {
             Music_Btn.GetComponent<Image>().sprite = Music_OFF;
         }
-
 
     }
 
     public void VolumeButton()
     {
-        Volume = PlayerPrefs.GetInt("volume");
+        volume = PlayerPrefs.GetInt("volume");
 
-        if (Volume == 1)
+        if (volume == 1)
         {
-            Volume = 0;
-            AudioListener.volume = Volume;
+            volume = 0;
+            AudioListener.volume = volume;
             Vol_Btn.GetComponent<Image>().sprite = Vol_OFF;
-            PlayerPrefs.SetInt("volume", Volume);
+            PlayerPrefs.SetInt("volume", volume);
         }
         else
         {
-            Volume = 1;
-            AudioListener.volume = Volume;
+            volume = 1;
+            AudioListener.volume = volume;
             Vol_Btn.GetComponent<Image>().sprite = Vol_ON;
-            PlayerPrefs.SetInt("volume", Volume);
+            PlayerPrefs.SetInt("volume", volume);
         }
-
 
     }
 
     public void MusicButton()
     {
-        Music = PlayerPrefs.GetInt("music");
+        music = PlayerPrefs.GetInt("music");
 
-        if (Music == 1)
+        if (music == 1)
         {
-            Music = 0;
+            music = 0;
             Music_Btn.GetComponent<Image>().sprite = Music_OFF;
-            PlayerPrefs.SetInt("music", Music);
+            PlayerPrefs.SetInt("music", music);
             AudioManager.GetComponent<AudioControlScript>().MuteSoundInGameplay();
         }
         else
         {
-            Music = 1;
+            music = 1;
             Music_Btn.GetComponent<Image>().sprite = Music_ON;
-            PlayerPrefs.SetInt("music", Music);
+            PlayerPrefs.SetInt("music", music);
             AudioManager.GetComponent<AudioControlScript>().PlaySoundInGameplay();
         }
-
-
 
     }
 
     public void PauseControl()
     {
 
-        if (Time.timeScale == 1)//Time is running
+        if (Time.timeScale == 1) // Time is running
         {
             PauseScreen.SetActive(true);
-            PauseGame(0);//Freeze time
+            PauseGame(0); // Freeze time
 
         }
         else
         {
             PauseScreen.SetActive(false);
-            PauseGame(1); //Time continues running
+            PauseGame(1); // Time continues running
 
         }
 
     }
 
-
     void PauseGame(int value)
     {
         Time.timeScale = value;
     }
-
-
-
 
 }

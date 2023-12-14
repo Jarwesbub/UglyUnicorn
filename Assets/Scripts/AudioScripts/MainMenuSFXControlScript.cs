@@ -8,13 +8,13 @@ public class MainMenuSFXControlScript : MonoBehaviour
 
     public AudioSource ArtJumpSound;
     public AudioSource LogoSound;
-    private int Volume; //0 = OFF ; 1 = ON
+    private int volume; //0 = OFF ; 1 = ON
 
     void Awake()
     {
         if (PlayerPrefs.HasKey("volume"))
         {
-            Volume = PlayerPrefs.GetInt("volume");
+            volume = PlayerPrefs.GetInt("volume");
 
         }
         else
@@ -26,7 +26,7 @@ public class MainMenuSFXControlScript : MonoBehaviour
 
     public void ArtSoundEffect()
     {
-        if (Volume == 1)
+        if (volume == 1)
         {
             ArtJumpSound.Play();
         }
@@ -34,7 +34,7 @@ public class MainMenuSFXControlScript : MonoBehaviour
 
     public void LogoSoundEffect()
     {
-        if (Volume == 1)
+        if (volume == 1)
         {
             LogoSound.Play();
         }

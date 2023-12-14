@@ -13,14 +13,7 @@ public class UU_AudioScript : MonoBehaviour
     public AudioSource DragonHitObstacle;
     public AudioSource GrowlDMG;
 
-    private bool SuperJump = false;
-
-    /// <summary>
-    /// ///////////////////////////////////   PLAYER
-    /// </summary>
-    /// 
-
-
+    private bool superJump = false;
 
     public void JumpSound()
     {
@@ -29,15 +22,15 @@ public class UU_AudioScript : MonoBehaviour
 
     public void SuperJumpSound() // This stops bug: "Play jump sound twice when fast speed" (Control in UU_SuperJump animation)
     {
-        if (SuperJump == false)
+        if (superJump)
         {
-            SuperJump = true;
-            Jump.Play();
+            superJump = false;
+            Jump.Stop();
         }
         else
         {
-            SuperJump = false;
-            Jump.Stop();
+            superJump = true;
+            Jump.Play();
         }
     }
 
@@ -45,7 +38,7 @@ public class UU_AudioScript : MonoBehaviour
     {
         
         Jump.Stop();
-        SuperJump = false;
+        superJump = false;
         
     }
 
@@ -53,12 +46,11 @@ public class UU_AudioScript : MonoBehaviour
     {
         Collect.Play();
 
-
     }
+
     public void PlayerWrongButtonPressSound()
     {
         WrongButtonPress.Play();
-
 
     }
 
@@ -80,15 +72,10 @@ public class UU_AudioScript : MonoBehaviour
 
     }
 
-    /// <summary>
-    /// ///////////////////////////////////    DRAGON
-    /// </summary>
-
     public void DragonHitObstacleSound()
     {
         HitObstacle.Play();
         GrowlDMG.Play();
-
 
     }
 

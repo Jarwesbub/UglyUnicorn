@@ -15,72 +15,61 @@ public class SpriteColorControl : MonoBehaviour
     public Color EnemyAttack;
     public Color EnemyDMG;
 
-    //public int Value;
-    public int HealthCalc;
-    int Health;
+    int healthCalc;
+    int health;
 
-    public bool GameStart;
-    public bool DragonGetDamage = false;
-    //public int Cooldown = 0; // 0 = Cooldown not active, 1 = Cooldown active, 2 = Cooldown stop
+    bool gameStart;
 
     void Start()
     {
         Dragon_Sprite = GameObject.Find("Dragon_sprite");
         GetComponent<SpriteRenderer>();
 
-        GameStart = true;
-        HealthCalc = Stats.GetComponent<StatsScript>().health;
+        gameStart = true;
+        healthCalc = Stats.GetComponent<StatsScript>().health;
     }
     void LateUpdate()
     {
-        if (GameStart == true)
-        {
-            GameStart = false;
-        }
+        gameStart = !gameStart;
+
     }
 
     void Update()
     {
-        Health = Stats.GetComponent<StatsScript>().health;
+        health = Stats.GetComponent<StatsScript>().health;
 
-        if (HealthCalc - 1 >= Health)
+        if (healthCalc - 1 >= health)
         {
-            HealthCalc = Health;
+            healthCalc = health;
 
                 StartCoroutine(SpriteDamage());
 
         }
 
-        if (HealthCalc + 1 <= Health)
+        else if (healthCalc + 1 <= health)
         {
-            HealthCalc = Health;
+            healthCalc = health;
 
-            if (GameStart == false)
+            if (!gameStart)
             {
                 StartCoroutine(SpriteGetHP());
             }
             else
             {
-                GameStart = false;
+                gameStart = false;
             }
 
         }
 
-        if (DragonGetDamage == true)
-        {
-            DragonGetDamage = false;
-            StartCoroutine(DragonDamage());
+    }
 
-        }
-
-
-
+    public void DragonGetsDamage()
+    {
+        StartCoroutine(DragonDamage());
     }
 
     IEnumerator DragonDamage()
     {
-        Dragon_Sprite.GetComponent<Dragon_AnimScript>().GetDamage = true;
-
         float ColorTime = 0.2f;
         float WaitTime = 0.1f;
 
@@ -98,10 +87,9 @@ public class SpriteColorControl : MonoBehaviour
 
     }
 
-
     IEnumerator SpriteDamage()
     {
-        Dragon_Sprite.GetComponent<Dragon_AnimScript>().Bite = true;
+        Dragon_Sprite.GetComponent<Dragon_AnimScript>().DragonBites();
 
         float BiteWaitTime = 0.2f;
         float ColorTime = 0.1f;
@@ -112,9 +100,6 @@ public class SpriteColorControl : MonoBehaviour
         yield return new WaitForSeconds(ColorTime);
         PlayerSpriteRenderer.color = Normal;
         EnemySpriteRenderer.color = Normal;
-        //yield return new WaitForSeconds(MidTime);
-        //PlayerSpriteRenderer.color = Normal;
-
 
     }
 

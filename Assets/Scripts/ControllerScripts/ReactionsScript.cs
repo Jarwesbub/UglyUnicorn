@@ -14,28 +14,25 @@ public class ReactionsScript : MonoBehaviour
 
     public int Hitbox;
 
-    bool StartReact = false;
-    bool MissReaction = false;
-    //bool Reset = false;
+    bool startReact = false;
+    bool missReaction = false;
 
     float time = 1f;
-    public float ElapsedTime;
-    //private Coroutine RunningTimer;
+    public float elapsedTime;
 
-    bool TimerStart = false;
+    bool timerStart = false;
 
     public TMP_Text AddScoreTxt;
     public int AddScore;
-    public float ScoreTime;
-    public float ElapsedScoreTime;
-    bool StartScoreTime = false;
+    public float scoreTime;
+    public float elapsedScoreTime;
+    bool startScoreTime = false;
 
     void Start()
     {
         Stats = GameObject.Find("Stats");
 
-        MissReaction = false;
-
+        missReaction = false;
         Awe.enabled = false;
         Nice.enabled = false;
         Bad.enabled = false;
@@ -46,38 +43,28 @@ public class ReactionsScript : MonoBehaviour
 
     void Update()
     {
-        ElapsedTime += Time.deltaTime;
+        elapsedTime += Time.deltaTime;
 
-        if (StartReact == true)
+        if (startReact)
         {
-            StartReact = false;
+            startReact = false;
 
             Awe.enabled = false;
             Nice.enabled = false;
             Bad.enabled = false;
             Miss.enabled = false;
 
-            time = (1f + ElapsedTime);
+            time = (1f + elapsedTime);
 
             GetReactions();
             
-            TimerStart = true;
-
-
-            /*
-            StopCoroutine(ReactionsTimer());
-            time = (1f + ElapsedTime);
-
-
-            RunningTimer = StartCoroutine(ReactionsTimer());
-            */
+            timerStart = true;
 
         }
 
-        if (TimerStart == true && time < ElapsedTime)
+        if (timerStart && time < elapsedTime)
         {
-            TimerStart = false;
-
+            timerStart = false;
             Awe.enabled = false;
             Nice.enabled = false;
             Bad.enabled = false;
@@ -85,15 +72,14 @@ public class ReactionsScript : MonoBehaviour
 
         }
 
-
         //SCORE
-        if (StartScoreTime == true)
+        if (startScoreTime == true)
         {
-            ElapsedTime += Time.deltaTime;
+            elapsedTime += Time.deltaTime;
 
-            if (ElapsedTime > ScoreTime)
+            if (elapsedTime > scoreTime)
             {
-                StartScoreTime = false;
+                startScoreTime = false;
                 AddScoreTxt.text = " ";
             }
 
@@ -104,15 +90,15 @@ public class ReactionsScript : MonoBehaviour
 
     public void StartReactions(bool Success)
     {
-        if (Success == true)
+        if (Success)
         {
-            StartReact = true;
-            MissReaction = false;
+            startReact = true;
+            missReaction = false;
         }
         else
         {
-            StartReact = true;
-            MissReaction = true;
+            startReact = true;
+            missReaction = true;
         }
 
     }
@@ -121,7 +107,7 @@ public class ReactionsScript : MonoBehaviour
     {
         int HitboxCheck = Hitbox;
 
-        if (MissReaction == false)
+        if (!missReaction)
         {
             if (HitboxCheck == 1) // Awesome hit
             {
@@ -164,8 +150,8 @@ public class ReactionsScript : MonoBehaviour
         AddScoreTxt.text = AddScore.ToString();
         AddScoreTxt.text = "+ " + AddScoreTxt.text;
 
-        ScoreTime = ElapsedTime + ScoreTimerDuration;
-        StartScoreTime = true;
+        scoreTime = elapsedTime + ScoreTimerDuration;
+        startScoreTime = true;
 
     }
 

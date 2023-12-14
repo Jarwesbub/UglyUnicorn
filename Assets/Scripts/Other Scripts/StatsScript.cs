@@ -37,7 +37,7 @@ public class StatsScript : MonoBehaviour
     {
         PlayerDiesScriptObj.SetActive(false);
 
-        DifficultyLevel = GameObject.Find("Spawner").GetComponent<SpawnerScript>().DifficultyLevel;
+        DifficultyLevel = GameObject.Find("Spawner").GetComponent<SpawnerScript>().difficultyLevel;
         
         if (DifficultyLevel == 1)
         {
@@ -109,7 +109,7 @@ public class StatsScript : MonoBehaviour
 
         Speed = SlowSpeed;
         Damage += 1;
-        PlayerControl.GetComponent<PlayerController>().GetHit = true;
+        PlayerControl.GetComponent<PlayerController>().SetPlayerGotHit(true);
 
 
 

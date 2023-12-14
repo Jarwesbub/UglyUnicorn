@@ -57,7 +57,7 @@ public class Lvl1PlayerPrefs : MonoBehaviour
 
         //HighScore = PlayerPrefs.GetInt("highscorelevel1");
 
-        EndResultsObj.GetComponent<EndResultsScript>().HighScore = HighScore;
+        EndResultsObj.GetComponent<EndResultsScript>().highScore = HighScore;
 
     }
     // Shows text on the screen with only code

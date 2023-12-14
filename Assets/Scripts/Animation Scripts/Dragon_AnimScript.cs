@@ -7,72 +7,50 @@ public class Dragon_AnimScript : MonoBehaviour
     public GameObject DragonFireEffect;
     private GameObject Stats;
     public Animator animator;
-    public bool Bite = false;
-    public bool GetDamage = false;
-    public float PosAdd = 1f;
-    public float StartingPosition;
-    public bool PlayerGetsHP = false;
 
-    public bool PlayerDies = false;
+    private float posAdd = 1f;
+    private float startingPosition;
+    private float posX, newPosX;
+    private float runLevel, baseSpeed;
 
-    public float PosX, NewPosX;
-    public bool DragonGetLerp;
-    bool DragonMovesForward;
+    private bool dragonMovesForward;
+    private bool dragonGetLerp;
+    private bool playerGetsHP = false;
 
-    private float RunLevel, BaseSpeed;
-
-    //TESTING
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
-        DragonGetLerp = false;
-        PlayerDies = false;
-        StartingPosition = transform.position.x;
+        dragonGetLerp = false;
+        startingPosition = transform.position.x;
 
         Stats = GameObject.Find("Stats");
 
-        BaseSpeed = 1f;
+        baseSpeed = 1f;
     }
 
-    // Update is called once per frame
+    public void DragonBites()
+    {
+        animator.speed = 0.4f;
+        animator.SetTrigger("Bite Trigger");
+        DragonPosition(true);
+    }
+
     void Update()
     {
-        RunLevel = Stats.GetComponent<StatsScript>().Speed;
+        runLevel = Stats.GetComponent<StatsScript>().Speed;
+        animator.speed = baseSpeed + (runLevel / 50);
 
-        if (Bite == false)
+        if (playerGetsHP)
         {
-            animator.speed = BaseSpeed + (RunLevel / 50);
-
-        }
-
-        if (Bite == true)
-        {
-            Bite = false;
-            animator.speed = 0.4f;
-            animator.SetTrigger("Bite Trigger");
-            DragonPosition(true);
-        }
-        if (GetDamage == true)
-        {
-            GetDamage = false;
-
-        }
-        if (PlayerGetsHP == true)
-        {
-            PlayerGetsHP = false;
+            playerGetsHP = false;
             DragonPosition(false);
         }
 
-        if (DragonGetLerp == true)
+        if (dragonGetLerp)
         {
             DragonSmoothPosition();
 
 
         }
-
 
     }
 
@@ -86,103 +64,71 @@ public class Dragon_AnimScript : MonoBehaviour
     {
         DragonFireEffect.GetComponent<ParticleSystem>().Play();
 
-
     }
-
-
-
 
     void DragonSmoothPosition()
     {
-        //PosX = transform.position.x;
-        float Pos = PosAdd / 100;
+        float Pos = posAdd / 100;
 
-        PosX = transform.position.x;
+        posX = transform.position.x;
 
-        if (DragonMovesForward == true)
+        if (dragonMovesForward)
         {
-            if (PosX < NewPosX)
+            if (posX < newPosX)
             {
                 gameObject.transform.position += new Vector3(Pos, 0f, 0f);
 
             }
             else
             {
-                PosX = NewPosX;
-                DragonGetLerp = false;
+                posX = newPosX;
+                dragonGetLerp = false;
 
             }
 
         }
         else
         {
-            if (PosX > NewPosX)
+            if (posX > newPosX)
             {
                 gameObject.transform.position -= new Vector3(Pos, 0f, 0f);
 
             }
             else
             {
-                PosX = NewPosX;
-                DragonGetLerp = false;
+                posX = newPosX;
+                dragonGetLerp = false;
 
             }
-
-
         }
-
-
-        
-       /*
-        LerpTime += (LerpSlowDownValue / 1000) * Time.deltaTime;
-
-        Speed = Mathf.Lerp(Speed, 0, LerpTime);
-       */
     }
-
-
-
 
     public void DragonPosition(bool Add)
     {
-        PlayerDies = Stats.GetComponent<StatsScript>().PlayerDies;
-
-        PosX = transform.position.x;
-       
-
-        if (PlayerDies == false)
+        bool playerDies = Stats.GetComponent<StatsScript>().PlayerDies;
+        posX = transform.position.x;
+     
+        if (!playerDies)
         {
-            //PosX = transform.position.x;
-
-            if (Add == true) // Dragon Moves forward //Add is called from if (Bite == true)
+            if (Add) // Dragon Moves forward //Add is called from if (Bite == true)
             {
-                if (PosX <= -10f)
+                if (posX <= -10f)
                 {
-                    NewPosX = PosX + PosAdd;
-                    DragonMovesForward = true;
-                    DragonGetLerp = true;
-                    //gameObject.transform.position += new Vector3(PosAdd, 0f, 0f);
+                    newPosX = posX + posAdd;
+                    dragonMovesForward = true;
+                    dragonGetLerp = true;
                 }
             }
             else // Dragon Moves backward // Add is called from SpriteColorControl(void dragondamage()
             {
-                if (PosX > StartingPosition)
+                if (posX > startingPosition)
                 {
-                    NewPosX = PosX - PosAdd;
-                    DragonMovesForward = false;
-                    DragonGetLerp = true;
-                    //gameObject.transform.position -= new Vector3(PosAdd, 0f, 0f);
-
+                    newPosX = posX - posAdd;
+                    dragonMovesForward = false;
+                    dragonGetLerp = true;
                 }
             }
-
-            
-
         }
-
-
-
     }
-
 
 }

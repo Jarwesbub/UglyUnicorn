@@ -18,9 +18,13 @@ public class Dragon_AudioScript : MonoBehaviour
         shuffle = Random.Range(1, 2+1);
 
         if (shuffle == 1)
+        {
             Growl1.Play();
+        }
         else
+        {
             Growl2.Play();
+        }
 
     }
 

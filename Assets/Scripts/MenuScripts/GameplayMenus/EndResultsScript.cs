@@ -21,10 +21,9 @@ public class EndResultsScript : MonoBehaviour
     public TMP_Text HighScoreTxt;
     public TMP_Text DifficultyTxt;
 
-
-    int Score;
-    public int HighScore;
-    bool ShowScores = false;
+    int score;
+    public int highScore;
+    bool showScores = false;
 
 
     void OnEnable()
@@ -56,7 +55,7 @@ public class EndResultsScript : MonoBehaviour
 
     void Update()
     {
-        if (ShowScores == true)
+        if (showScores)
         {
             DrawScore();
 
@@ -64,14 +63,11 @@ public class EndResultsScript : MonoBehaviour
     }
 
 
-
     IEnumerator WaitTime()
     {
         AudioManager.GetComponent<AudioControlScript>().EndScreenVolume(); // Lower volume when gets active
 
         yield return new WaitForSeconds(3.5f); // 2f original
-
-        
 
         EndResultsSound.Play();
 
@@ -81,52 +77,40 @@ public class EndResultsScript : MonoBehaviour
         GameplayUI.SetActive(false);
         NewRecord.SetActive(false);
 
-        Score = GameObject.Find("Stats").GetComponent<StatsScript>().Score;
-
-        ShowScores = true;
+        score = GameObject.Find("Stats").GetComponent<StatsScript>().Score;
+        showScores = true;
     }
 
     public void DrawScore()
     {
-        /// Savedata for specific difficulty/level will be saved in Lvl1PlayerScript !
-        
-        int DifficultyLVL;
+        int difficultyLVL;
 
-        /*
-        if (HighScore == 0) // When playing first time -> no new high score text
-        {
-            HighScore = Score;
-        }
-        */
-        if (Score > HighScore)
+        if (score > highScore)
         {
             NewRecord.SetActive(true);
-            HighScore = Score; ////When plyer makes new high score -> show new high score (not the old one)
+            highScore = score; ////When plyer makes new high score -> show new high score (not the old one)
         }
 
-        ScoreTxt.text = Score.ToString();
+        ScoreTxt.text = score.ToString();
         ScoreTxt.text = "Your Score: " + ScoreTxt.text;
 
-        HighScoreTxt.text = HighScore.ToString();
+        HighScoreTxt.text = highScore.ToString();
         HighScoreTxt.text = "High Score: " + HighScoreTxt.text;
 
 
-
-
-
-        DifficultyLVL = PlayerPrefs.GetInt("Difficulty");
+        difficultyLVL = PlayerPrefs.GetInt("Difficulty");
         
-        if (DifficultyLVL == 1)
+        if (difficultyLVL == 1 )
         {
             DifficultyTxt.text = "Difficulty: Easy";
 
         }
-        else if (DifficultyLVL == 2)
+        else if (difficultyLVL == 2)
         {
             DifficultyTxt.text = "Difficulty: Normal";
 
         }
-        else if (DifficultyLVL == 3)
+        else if (difficultyLVL == 3)
         {
             DifficultyTxt.text = "Difficulty: Hard";
 
@@ -135,8 +119,6 @@ public class EndResultsScript : MonoBehaviour
         {
             DifficultyTxt.text = "Difficulty: Error";
         }
-
-
 
     }
 

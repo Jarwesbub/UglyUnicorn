@@ -5,13 +5,12 @@ using UnityEngine;
 public class BombWaitScript : MonoBehaviour
 {
     float ElapsedTime;
-    float Timer;
-    public float WaitTimeSeconds;
+    float timer;
+    public float waitTimeSeconds; // 5
 
     void OnEnable()
     {
-
-        Timer = Time.deltaTime + WaitTimeSeconds;
+        timer = Time.deltaTime + waitTimeSeconds;
 
     }
 
@@ -19,7 +18,7 @@ public class BombWaitScript : MonoBehaviour
     {
         ElapsedTime += Time.deltaTime;
 
-        if (ElapsedTime > Timer)
+        if (ElapsedTime > timer)
         {
             gameObject.GetComponent<BombWaitScript>().enabled = false;
 
@@ -30,7 +29,7 @@ public class BombWaitScript : MonoBehaviour
     {
         ElapsedTime = 0f;
 
-        gameObject.GetComponent<SpawnerScript>().BombWaitTimer = false;
+        gameObject.GetComponent<SpawnerScript>().bombWaitTimer = false;
 
 
     }

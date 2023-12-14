@@ -17,9 +17,7 @@ public class ButtonPointerScript : MonoBehaviour, IPointerDownHandler// required
     //Do this when the mouse is clicked over the selectable object this script is attached to.
     public void OnPointerDown(PointerEventData eventData)
     {
-
-        PlayerControl.GetComponent<PlayerController>().ButtonPressed = Button;
-        //Debug.Log(this.gameObject.name + " Was Clicked.");
+        PlayerControl.GetComponent<PlayerController>().ButtonIsPressed(Button);
         
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
-    //public GameObject HighScoreScreen;
 
     public void GoToDifficultySelectScene()
     {
@@ -15,19 +14,13 @@ public class MainMenuScript : MonoBehaviour
 
     public void GoToHighScoreScene()
     {
-        //HighScoreScreen.SetActive(true);
-
-
         SceneManager.LoadScene("HighScoreScene");
 
     }
 
     public void GoToMainMenu()
     {
-        //HighScoreScreen.SetActive(false);
-
         SceneManager.LoadScene("MainMenuScene");
-
 
     }
 

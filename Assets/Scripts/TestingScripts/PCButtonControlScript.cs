@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;// Required when using Event data.
 
-public class ButtonControlScript : MonoBehaviour
+public class PCButtonControlScript : MonoBehaviour
 {
     //////////This script is only for button press commands in Unity "On Click()" events
 
@@ -27,15 +27,15 @@ public class ButtonControlScript : MonoBehaviour
     {
         if (Input.GetKeyDown("a")) // COMPUTER USE
         {
-            PlayerControl.GetComponent<PlayerController>().ButtonPressed = 1;
+            PlayerControl.GetComponent<PlayerController>().ButtonIsPressed(1);
         }
         if (Input.GetKeyDown("d")) // COMPUTER USE
         {
-            PlayerControl.GetComponent<PlayerController>().ButtonPressed = 2;
+            PlayerControl.GetComponent<PlayerController>().ButtonIsPressed(2);
         }
         if (Input.GetKeyDown("space"))
         {
-            PlayerControl.GetComponent<PlayerController>().JumpStart = true;
+            PlayerControl.GetComponent<PlayerController>().SetPlayerJumpStart(true);
             UU_Sprite.GetComponent<UU_AnimScript>().JumpButton();
 
         }
