@@ -39,7 +39,7 @@ TextureImporter:
       213: 4908048295078597457
     second: UglyUnicorn_run1_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -56,10 +56,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -69,8 +71,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -98,8 +100,10 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -109,9 +113,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -121,9 +126,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -133,9 +139,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,6 +152,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -161,6 +169,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.3469722, y: 0.46339285}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -182,6 +191,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.3420622, y: 0.46071428}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -203,6 +213,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.34124386, y: 0.48125}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -224,6 +235,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.3469722, y: 0.4794643}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -245,6 +257,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.3314239, y: 0.4857143}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -266,6 +279,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.34697217, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -287,6 +301,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.36415714, y: 0.48482144}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -308,6 +323,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.34697217, y: 0.48839286}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -329,6 +345,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.3338789, y: 0.43482143}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -350,6 +367,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.31260228, y: 0.43660715}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -371,6 +389,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.3420622, y: 0.43392858}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -392,6 +411,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.31260228, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -403,6 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -412,9 +433,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UglyUnicorn_run1_0: -7895465052155281410
+      UglyUnicorn_run1_1: 1308093003914428787
+      UglyUnicorn_run1_10: -7132757142846822902
+      UglyUnicorn_run1_11: 4908048295078597457
+      UglyUnicorn_run1_2: 2161739565175873732
+      UglyUnicorn_run1_3: 2605878551476531068
+      UglyUnicorn_run1_4: -1706380813559790488
+      UglyUnicorn_run1_5: -2551823194502246320
+      UglyUnicorn_run1_6: 3461206778923390409
+      UglyUnicorn_run1_7: -963247103904137150
+      UglyUnicorn_run1_8: 3263495875145084519
+      UglyUnicorn_run1_9: 1729670281333510308
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

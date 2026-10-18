@@ -1,0 +1,5 @@
+D:/GameDev/Unity PELIT 2/UglyUnicorn/.utmp/RelWithDebInfo/2i244h61/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/GameDev/Unity PELIT 2/UglyUnicorn/.utmp/RelWithDebInfo/2i244h61/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/GameDev/Unity PELIT 2/UglyUnicorn/.utmp/RelWithDebInfo/2i244h61/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+D:/GameDev/Unity PELIT 2/UglyUnicorn/.utmp/RelWithDebInfo/2i244h61/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+D:/GameDev/Unity PELIT 2/UglyUnicorn/.utmp/RelWithDebInfo/2i244h61/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

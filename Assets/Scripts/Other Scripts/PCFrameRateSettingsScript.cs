@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FrameRateSettings : MonoBehaviour
+public class PCFrameRateSettings : MonoBehaviour
 {
     public int VSyncValue; //0-4
     public int MaxFrameRate;
