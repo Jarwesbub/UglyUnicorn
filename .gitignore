@@ -23,6 +23,7 @@
 /WebGL/
 /zAAB_files/
 /zKeystores/
+/zAndroidapk/
 
 # Visual Studio cache directory
 .vs/
