@@ -53,7 +53,7 @@ public class MoveScript : MonoBehaviour
 
     void OnDestroy()
     {
-        if (startMoving & gameObject != null) // Original (not moving) prefabs wont have effect on this
+        if (startMoving & gameObject != null && ParticleSystem != null) // Original (not moving) prefabs wont have effect on this
         {
             Vector2 DeathPos;
             DeathPos = new Vector2(transform.position.x, transform.position.y);

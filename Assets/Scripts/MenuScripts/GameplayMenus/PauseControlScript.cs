@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseControlScript : MonoBehaviour
 {
@@ -106,6 +107,19 @@ public class PauseControlScript : MonoBehaviour
     void PauseGame(int value)
     {
         Time.timeScale = value;
+    }
+
+    // Navigation buttons added in build v.1.04
+    public void MainMenuButton()
+    {
+        PauseGame(1); // Time continues running.
+        SceneManager.LoadScene("MainMenuScene");
+
+    }
+    public void QuitGameButton()
+    {
+        Application.Quit();
+
     }
 
 }
